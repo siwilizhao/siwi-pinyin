@@ -1,0 +1,39 @@
+{
+  "name": "siwi-pinyin",
+  "version": "1.0.3",
+  "description": "hanzi to pinyin for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -t 30000 test/index.test.js"
+  },
+  "keywords": [
+    "hanzi to pinyin",
+    "siwi-pinyin",
+    "siwilizhao",
+    "siwi",
+    "pinyin",
+    "hanzi"
+  ],
+  "author": "siwilizhao",
+  "license": "MIT",
+  "dependencies": {
+    "siwi-json": "^1.0.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.5",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siwilizhao/siwi-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siwilizhao/siwi-file/issues"
+  },
+  "homepage": "https://github.com/siwilizhao/siwi-file#readme"
+}
