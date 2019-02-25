@@ -4,29 +4,25 @@
 [![Github file size](https://img.shields.io/github/size/siwilizhao/siwi-pinyin/lib/index.js.svg)](https://github.com/siwilizhao/siwi-pinyin/lib/index.js)
 # siwi-pinyin
 
-Hanzi to pinyin
+hanzi to pinyin for nodejs 
 
-# 安装
+## install
 
 > yarn add siwi-pinyin
 
 > npm install siwi-pinyin
 
+## test
+
 ```js
-
-const Pinyin = require('siwi-pinyin')
-
-class Test{
-    constructor() {
-        this.test()
-    }
-    async test () {
-        let str = "你大爷的二愣子"
-        
-        let res = await Pinyin.convert(str)
+const expect = require('chai').expect
+describe('/lib/index.js', () => {
+    it('convert',async () => {
+        const pinyin = require('../index')
+        const hanzi = '还好，欢迎光临';
+        const res = await pinyin.convert(hanzi)
         console.log(res)
-    }
-}
-
-module.exports = new Test()
+        expect(res).to.be.equal('hái hǎo ，huān yíng guāng lín ')
+    });
+});
 ```
