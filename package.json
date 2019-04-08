@@ -1,6 +1,6 @@
 {
   "name": "siwi-pinyin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "hanzi to pinyin for nodejs",
   "main": "index.js",
   "scripts": {
